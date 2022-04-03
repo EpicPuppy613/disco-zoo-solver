@@ -57,9 +57,9 @@ function Main() {
             }
             if (invalid) {continue;}
             for (var xa = 0; xa < 5; xa++) for (var ya = 0; ya < 5; ya++) {
-                if (G.locations[animal.id].length != 0) {
+                if (G.locations[animal.id].length != 0 && G.grid[xa][ya] == ' ') {
                     probability[xa][ya] += test[xa][ya] * 10;
-                } else {
+                } else if (G.grid[xa][ya] == ' ') {
                     probability[xa][ya] += test[xa][ya];
                 }
             }
@@ -102,7 +102,7 @@ function Reset () {
         if (animal == "") continue;
         G.current.push(animal);
         G.locations[G.animals[animal].id] = [];
-        select += '<option value="' + G.animals[animal].id + '">' + G.animals[animal].name + '</option>';
+        select += '<option value="' + animal + '">' + G.animals[animal].name + '</option>';
     }
     document.getElementById("guess").innerHTML = select;
     document.getElementById('solved').style.display = 'none';
@@ -113,12 +113,23 @@ function Reset () {
 function Input (x, y) {
     document.getElementById("c" + x + y).disabled = true;
     var animal = document.getElementById("guess").value;
-    G.grid[x][y] = animal;
+    if (animal == "n") {
+        G.grid[x][y] = "n";
+    } else {
+        G.grid[x][y] = G.animals[animal].id;
+    }
     if (document.getElementById("rescue").value == 'y' && animal != '') {
-        G.current.splice(G.current.indexOf(animal), 1);
+        index = G.current.indexOf(animal);
+        if (index != -1) G.current.splice(index, 1);
+        var select = '<option value="n">Nothing</option>';
+        for (const a of G.current) { 
+            if (a == "") continue;
+            select += '<option value="' + a + '">' + G.animals[a].name + '</option>';
+        }
+        document.getElementById("guess").innerHTML = select;
     }
     if (animal != 'n') {
-        G.locations[animal].push([x, y]);
+        G.locations[G.animals[animal].id].push([x, y]);
     }
     if (G.current.length != 0) {
         Main();

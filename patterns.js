@@ -760,7 +760,7 @@ G.patterns = {
             },
             "lmoth": {
                 "id": "slmh",
-                "name": "Lunar Moth",
+                "name": "Luna Moth",
                 "size": [3, 3],
                 "pattern": [
                     [" ", " ", "X"],

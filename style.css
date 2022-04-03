@@ -1,0 +1,35 @@
+html {
+    font-family: monospace;
+    background-color: black;
+    color: white;
+}
+td {
+    padding: 3px;
+}
+.cell {
+    width: 100%;
+}
+button {
+    color: white;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+button:hover {
+    background-color: #222;
+}
+button:active {
+    background-color: #444;
+}
+button:disabled {
+    border-color: gray;
+    background-color: black;
+}
+select {
+    color: white;
+    background-color: black;
+    border-color: white;
+}
+#solved {
+    color: lime;
+}

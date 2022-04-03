@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Disco Zoo Solver</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>Disco Zoo Solver</h1>
+        <p>
+            Area: 
+            <select id="area">
+                <option value="farm">Farm</option>
+                <option value="outback">Outback</option>
+                <option value="savanna">Savanna</option>
+                <option value="northern">Northern</option>
+                <option value="polar">Polar</option>
+                <option value="jungle">Jungle</option>
+                <option value="jurassic">Jurassic</option>
+                <!--<option value="ice">Ice Age</option>
+                <option value="city">City</option>
+                <option value="mountain">Mountain</option>
+                <option value="moon">Moon</option>
+                <option value="mars">Mars</option>-->
+            </select>
+            <button onclick="UpdateArea()">UPDATE</button>
+            <br>
+            Animal 1:
+            <select id="animal1">
+                <option value="">None</option>
+            </select>
+            <br>
+            Animal 2:
+            <select id="animal2">
+                <option value="">None</option>
+            </select>
+            <br>
+            Animal 3:
+            <select id="animal3">
+                <option value="">None</option>
+            </select>
+            <br>
+            <button onclick="Reset()" id="reset">RESET with new settings</button>
+            <br>
+            Guess Result:
+            <select id="guess">
+                <option value="">Nothing</option>
+            </select>
+            Rescued:<select id="rescue"><option value="n">N</option><option value="y">Y</option></select>
+            <p id="solved">SOLVED!</p>
+        </p>
+        <table>
+            <tr>
+                <td><button id="c04" onclick="Input(0, 4)" class="cell">0.00%</button></td>
+                <td><button id="c14" onclick="Input(1, 4)" class="cell">0.00%</button></td>
+                <td><button id="c24" onclick="Input(2, 4)" class="cell">0.00%</button></td>
+                <td><button id="c34" onclick="Input(3, 4)" class="cell">0.00%</button></td>
+                <td><button id="c44" onclick="Input(4, 4)" class="cell">0.00%</button></td>
+            </tr>
+            <tr>
+                <td><button id="c03" onclick="Input(0, 3)" class="cell">0.00%</button></td>
+                <td><button id="c13" onclick="Input(1, 3)" class="cell">0.00%</button></td>
+                <td><button id="c23" onclick="Input(2, 3)" class="cell">0.00%</button></td>
+                <td><button id="c33" onclick="Input(3, 3)" class="cell">0.00%</button></td>
+                <td><button id="c43" onclick="Input(4, 3)" class="cell">0.00%</button></td>
+            </tr>
+            <tr>
+                <td><button id="c02" onclick="Input(0, 2)" class="cell">0.00%</button></td>
+                <td><button id="c12" onclick="Input(1, 2)" class="cell">0.00%</button></td>
+                <td><button id="c22" onclick="Input(2, 2)" class="cell">0.00%</button></td>
+                <td><button id="c32" onclick="Input(3, 2)" class="cell">0.00%</button></td>
+                <td><button id="c42" onclick="Input(4, 2)" class="cell">0.00%</button></td>
+            </tr>
+            <tr>
+                <td><button id="c01" onclick="Input(0, 1)" class="cell">0.00%</button></td>
+                <td><button id="c11" onclick="Input(1, 1)" class="cell">0.00%</button></td>
+                <td><button id="c21" onclick="Input(2, 1)" class="cell">0.00%</button></td>
+                <td><button id="c31" onclick="Input(3, 1)" class="cell">0.00%</button></td>
+                <td><button id="c41" onclick="Input(4, 1)" class="cell">0.00%</button></td>
+            </tr>
+            <tr>
+                <td><button id="c00" onclick="Input(0, 0)" class="cell">0.00%</button></td>
+                <td><button id="c10" onclick="Input(1, 0)" class="cell">0.00%</button></td>
+                <td><button id="c20" onclick="Input(2, 0)" class="cell">0.00%</button></td>
+                <td><button id="c30" onclick="Input(3, 0)" class="cell">0.00%</button></td>
+                <td><button id="c40" onclick="Input(4, 0)" class="cell">0.00%</button></td>
+            </tr>
+        </table>
+        <script src="patterns.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

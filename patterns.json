@@ -529,9 +529,9 @@
                 "name": "Saber Tooth",
                 "size": [3, 3],
                 "pattern": [
+                    [" ", "X", " "],
                     ["X", " ", " "],
-                    [" ", " ", "X"],
-                    [" ", "X", " "]
+                    [" ", " ", "X"]
                 ]
             },
             "mammoth": {
@@ -759,7 +759,7 @@
             },
             "lmoth": {
                 "id": "slmh",
-                "name": "Lunar Moth",
+                "name": "Luna Moth",
                 "size": [3, 3],
                 "pattern": [
                     [" ", " ", "X"],

@@ -530,9 +530,9 @@ G.patterns = {
                 "name": "Saber Tooth",
                 "size": [3, 3],
                 "pattern": [
-                    [" ", "X", " "],
+                    [" ", " ", "X"],
                     ["X", " ", " "],
-                    [" ", " ", "X"]
+                    [" ", "X", " "]
                 ]
             },
             "mammoth": {

@@ -139,3 +139,22 @@ function Input (x, y) {
         document.getElementById('c' + x + y).innerHTML = '100.00%';
     }
 }
+
+document.addEventListener('keydown', (e) => {
+    if (e.code == 'KeyR') {
+        document.getElementById('rescue').value = 'y';
+    }
+    else if (e.code == 'KeyE') {
+        document.getElementById('rescue').value = 'n';
+    }
+    else if (e.code == 'KeyW') {
+        var guess = document.getElementById('guess').value;
+        var index = G.current.indexOf(guess);
+        if (index != G.current.length - 1) {
+            document.getElementById('guess').value = G.current[index + 1];
+        }
+        else {
+            document.getElementById('guess').value = 'n';
+        }
+    }
+})

@@ -33,3 +33,20 @@ select {
 #solved {
     color: lime;
 }
+table {
+    width: 100%;
+    text-align: center;
+}
+td {
+    border: 1px solid white;
+}
+td:hover {
+    background-color: #333;
+}
+td .disabled {
+    border-color: gray;
+    background-color: black;
+}
+.best {
+    color: lime;
+}

@@ -16,10 +16,10 @@ button {
     border-radius: 3px;
 }
 button:hover {
-    background-color: #222;
+    background-color: #333;
 }
 button:active {
-    background-color: #444;
+    background-color: #666;
 }
 button:disabled {
     border-color: gray;

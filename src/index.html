@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Disco Zoo Solver</title>
+    </head>
+    <body>
+        <h1>Disco Zoo Solver</h1>
+        <h4>V1.0.0</h4>
+        <p>
+            Area: 
+            <select id="area">
+                <option value="farm">Farm</option>
+                <option value="outback">Outback</option>
+                <option value="savanna">Savanna</option>
+                <option value="northern">Northern</option>
+                <option value="polar">Polar</option>
+                <option value="jungle">Jungle</option>
+                <option value="jurassic">Jurassic</option>
+                <option value="ice">Ice Age</option>
+                <option value="city">City</option>
+                <option value="mountain">Mountain</option>
+                <option value="nocturnal">Nocturnal</option>
+                <option value="moon">Moon</option>
+                <option value="mars">Mars</option>
+            </select>
+            <br>
+            Animal 1:
+            <select id="animal1">
+                <option value="">None</option>
+            </select>
+            <br>
+            Animal 2:
+            <select id="animal2">
+                <option value="">None</option>
+            </select>
+            <br>
+            Animal 3:
+            <select id="animal3">
+                <option value="">None</option>
+            </select>
+            <br>
+            <button id="reset">Start New Board</button>
+            <br>
+            Guess Result:
+            <select id="guess">
+                <option value="">Nothing</option>
+            </select>
+            Rescued:<select id="rescue"><option value="n">N</option><option value="y">Y</option></select>
+            <p id="solved">SOLVED!</p>
+        </p>
+        <table id="grid-table"></table>
+    </body>
+</html>

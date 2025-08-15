@@ -1,0 +1,822 @@
+{
+    "farm": {
+        "fp": {
+            "name": "Pig",
+            "size": [2, 2],
+            "pattern": [
+                [1, 1],
+                [1, 1]
+            ]
+        },
+        "fs": {
+            "name": "Sheep",
+            "size": [4, 1],
+            "pattern": [
+                [1], [1], [1], [1]
+            ]
+        },
+        "fr": {
+            "name": "Rabbit",
+            "size": [1, 4],
+            "pattern": [
+                [1, 1, 1, 1]
+            ]
+        },
+        "fcw": {
+            "name": "Cow",
+            "size": [3, 1],
+            "pattern": [
+                [1], [1], [1]
+            ]
+        },
+        "fh": {
+            "name": "Horse",
+            "size": [1, 3],
+            "pattern": [
+                [1, 1, 1]
+            ]
+        },
+        "fu": {
+            "name": "Unicorn",
+            "size": [3, 2],
+            "pattern": [
+                [0, 1],
+                [1, 0],
+                [1, 0]
+            ]
+        },
+        "fch": {
+            "name": "Chicken",
+            "size": [3, 3],
+            "pattern": [
+                [1, 0, 0],
+                [0, 1, 0],
+                [0, 0, 1]
+            ]
+        }
+    },
+    "outback": {
+        "okg": {
+            "name": "Kangaroo",
+            "size": [4, 4],
+            "pattern": [
+                [0, 0, 0, 1],
+                [0, 0, 1, 0],
+                [0, 1, 0, 0],
+                [1, 0, 0, 0]
+            ]
+        },
+        "op": {
+            "name": "Platypus",
+            "size": [3, 2],
+            "pattern": [
+                [0, 1],
+                [1, 1],
+                [1, 0]
+            ]
+        },
+        "oce": {
+            "name": "Crocodile",
+            "size": [4, 1],
+            "pattern": [
+                [1], [1], [1], [1]
+            ]
+        },
+        "oka": {
+            "name": "Koala",
+            "size": [2, 2],
+            "pattern": [
+                [0, 1],
+                [1, 1]
+            ]
+        },
+        "oco": {
+            "name": "Cockatoo",
+            "size": [2, 3],
+            "pattern": [
+                [0, 0, 1],
+                [1, 1, 0]
+            ]
+        },
+        "ot": {
+            "name": "Tiddalik",
+            "size": [3, 2],
+            "pattern": [
+                [1, 0],
+                [0, 1],
+                [1, 0]
+            ]
+        },
+        "oe": {
+            "name": "Echidna",
+            "size": [3, 2],
+            "pattern": [
+                [1, 0],
+                [1, 0],
+                [0, 1]
+            ]
+        }
+    },
+    "savanna": {
+        "sz": {
+            "name": "Zebra",
+            "size": [3, 3],
+            "pattern": [
+                [0, 1, 0],
+                [1, 0, 1],
+                [0, 1, 0]
+            ]
+        },
+        "sh": {
+            "name": "Hippo",
+            "size": [3, 3],
+            "pattern": [
+                [1, 0, 1],
+                [0, 0, 0],
+                [1, 0, 1]
+            ]
+        },
+        "sge": {
+            "name": "Giraffe",
+            "size": [1, 4],
+            "pattern": [
+                [1, 1, 1, 1]
+            ]
+        },
+        "sl": {
+            "name": "Lion",
+            "size": [3, 1],
+            "pattern": [
+                [1], [1], [1]
+            ]
+        },
+        "se": {
+            "name": "Elephant",
+            "size": [2, 2],
+            "pattern": [
+                [1, 1],
+                [0, 1]
+            ]
+        },
+        "sgn": {
+            "name": "Gryphon",
+            "size": [3, 2],
+            "pattern": [
+                [0, 1],
+                [1, 0],
+                [0, 1]
+            ]
+        },
+        "sr": {
+            "name": "Rhinoceros",
+            "size": [2, 3],
+            "pattern": [
+                [0, 1, 0],
+                [1, 0, 1]
+            ]
+        }
+    },
+    "northern": {
+        "nbr": {
+            "name": "Bear",
+            "size": [2, 3],
+            "pattern": [
+                [0, 0, 1],
+                [1, 1, 1]
+            ]
+        },
+        "nsk": {
+            "name": "Skunk",
+            "size": [3, 2],
+            "pattern": [
+                [1, 0],
+                [1, 1],
+                [0, 1]
+            ]
+        },
+        "nbv": {
+            "name": "Beaver",
+            "size": [3, 3],
+            "pattern": [
+                [0, 1, 0],
+                [0, 1, 0],
+                [1, 0, 1]
+            ]
+        },
+        "nm": {
+            "name": "Moose",
+            "size": [3, 2],
+            "pattern": [
+                [0, 1],
+                [1, 0],
+                [0, 1]
+            ]
+        },
+        "nf": {
+            "name": "Fox",
+            "size": [3, 2],
+            "pattern": [
+                [0, 1],
+                [0, 1],
+                [1, 0]
+            ]
+        },
+        "nsh": {
+            "name": "Sasquatch",
+            "size": [1, 2],
+            "pattern": [
+                [1, 1]
+            ]
+        },
+        "no": {
+            "name": "Otter",
+            "size": [2, 2],
+            "pattern": [
+                [1, 1],
+                [1, 0]
+            ]
+        }
+    },
+    "polar": {
+        "pp": {
+            "name": "Penguin",
+            "size": [3, 3],
+            "pattern": [
+                [1, 0, 0],
+                [0, 1, 1],
+                [1, 0, 0]
+            ]
+        },
+        "ps": {
+            "name": "Seal",
+            "size": [4, 3],
+            "pattern": [
+                [0, 0, 1],
+                [0, 1, 0],
+                [1, 0, 0],
+                [0, 1, 0]
+            ]
+        },
+        "pm": {
+            "name": "Muskox",
+            "size": [3, 2],
+            "pattern": [
+                [1, 1],
+                [0, 1],
+                [1, 0]
+            ]
+        },
+        "pb": {
+            "name": "Polar Bear",
+            "size": [3, 2],
+            "pattern": [
+                [0, 1],
+                [0, 0],
+                [1, 1]
+            ]
+        },
+        "pw": {
+            "name": "Walrus",
+            "size": [3, 2],
+            "pattern": [
+                [0, 1],
+                [1, 0],
+                [1, 0]
+            ]
+        },
+        "py": {
+            "name": "Yeti",
+            "size": [1, 3],
+            "pattern": [
+                [1, 0, 1]
+            ]
+        },
+        "pso": {
+            "name": "Snowy Owl",
+            "size": [2, 2],
+            "pattern": [
+                [0, 1],
+                [1, 1]
+            ]
+        }
+    },
+    "jungle": {
+        "jm": {
+            "name": "Monkey",
+            "size": [4, 2],
+            "pattern": [
+                [0, 1],
+                [1, 0],
+                [0, 1],
+                [1, 0]
+            ]
+        },
+        "jtc": {
+            "name": "Toucan",
+            "size": [2, 4],
+            "pattern": [
+                [0, 0, 1, 0],
+                [1, 1, 0, 1]
+            ]
+        },
+        "jg": {
+            "name": "Gorilla",
+            "size": [3, 2],
+            "pattern": [
+                [1, 1],
+                [0, 0],
+                [1, 1]
+            ]
+        },
+        "jpa": {
+            "name": "Panda",
+            "size": [3, 3],
+            "pattern": [
+                [0, 1, 0],
+                [0, 0, 0],
+                [1, 0, 1]
+            ]
+        },
+        "jtg": {
+            "name": "Tiger",
+            "size": [4, 1],
+            "pattern": [
+                [1], [0], [1], [1]
+            ]
+        },
+        "jpx": {
+            "name": "Phoenix",
+            "size": [3, 3],
+            "pattern": [
+                [0, 0, 1],
+                [0, 0, 0],
+                [1, 0, 0]
+            ]
+        },
+        "jl": {
+            "name": "Lemur",
+            "size": [2, 3],
+            "pattern": [
+                [1, 0, 1],
+                [0, 1, 0]
+            ]
+        }
+    },
+    "jurassic": {
+        "ddp": {
+            "name": "Diplodocus",
+            "size": [3, 3],
+            "pattern": [
+                [0, 0, 1],
+                [1, 1, 0],
+                [0, 1, 0]
+            ]
+        },
+        "ds": {
+            "name": "Stegosaurus",
+            "size": [4, 2],
+            "pattern": [
+                [1, 0],
+                [0, 1],
+                [0, 1],
+                [1, 0]
+            ]
+        },
+        "dr": {
+            "name": "Raptor",
+            "size": [3, 3],
+            "pattern": [
+                [0, 0, 1],
+                [0, 1, 1],
+                [1, 0, 0]
+            ]
+        },
+        "dtx": {
+            "name": "T-Rex",
+            "size": [2, 3],
+            "pattern": [
+                [1, 0, 1],
+                [1, 0, 0]
+            ]
+        },
+        "dtr": {
+            "name": "Triceratops",
+            "size": [3, 3],
+            "pattern": [
+                [1, 0, 1],
+                [0, 0, 0],
+                [0, 1, 0]
+            ]
+        },
+        "ddr": {
+            "name": "Dragon",
+            "size": [3, 2],
+            "pattern": [
+                [0, 1],
+                [0, 0],
+                [1, 0]
+            ]
+        },
+        "da": {
+            "name": "Ankylosaurus",
+            "size": [3, 2],
+            "pattern": [
+                [1, 0],
+                [0, 0],
+                [1, 1]
+            ]
+        }
+    },
+    "ice": {
+        "iwr": {
+            "name": "Wooly Rhino",
+            "size": [4, 3],
+            "pattern": [
+                [0, 1, 0],
+                [1, 0, 0],
+                [0, 0, 1],
+                [0, 1, 0]
+            ]
+        },
+        "igs": {
+            "name": "Giant Sloth",
+            "size": [3, 3],
+            "pattern": [
+                [1, 0, 1],
+                [0, 0, 0],
+                [1, 1, 0]
+            ]
+        },
+        "idw": {
+            "name": "Dire Wolf",
+            "size": [4, 3],
+            "pattern": [
+                [0, 1, 0],
+                [1, 0, 1],
+                [0, 0, 0],
+                [0, 1, 0]
+            ]
+        },
+        "ist": {
+            "name": "Saber Tooth",
+            "size": [3, 3],
+            "pattern": [
+                [0, 1, 0],
+                [1, 0, 0],
+                [0, 0, 1]
+            ]
+        },
+        "im": {
+            "name": "Mammoth",
+            "size": [3, 3],
+            "pattern": [
+                [0, 1, 0],
+                [0, 0, 1],
+                [1, 0, 0]
+            ]
+        },
+        "ia": {
+            "name": "Akhlut",
+            "size": [3, 3],
+            "pattern": [
+                [0, 1, 0],
+                [0, 0, 0],
+                [1, 0, 1]
+            ]
+        },
+        "iyc": {
+            "name": "Yukon Camel",
+            "size": [4, 3],
+            "pattern": [
+                [0, 1, 0],
+                [0, 0, 0],
+                [0, 0, 1],
+                [1, 0, 0]
+            ]
+        }
+    },
+    "city": {
+        "crc": {
+            "name": "Raccoon",
+            "size": [4, 2],
+            "pattern": [
+                [1, 1],
+                [0, 0],
+                [0, 1],
+                [1, 0]
+            ]
+        },
+        "cp": {
+            "name": "Pigeon",
+            "size": [3, 3],
+            "pattern": [
+                [0, 0, 1],
+                [1, 1, 0],
+                [1, 0, 0]
+            ]
+        },
+        "crt": {
+            "name": "Rat",
+            "size": [4, 2],
+            "pattern": [
+                [0, 1],
+                [1, 1],
+                [0, 0],
+                [1, 0]
+            ]
+        },
+        "cs": {
+            "name": "Squirrel",
+            "size": [3, 3],
+            "pattern": [
+                [0, 1, 0],
+                [1, 0, 0],
+                [0, 0, 1]
+            ]
+        },
+        "co": {
+            "name": "Opossum",
+            "size": [3, 2],
+            "pattern": [
+                [1, 1],
+                [0, 0],
+                [1, 0]
+            ]
+        },
+        "ct": {
+            "name": "Sewer Turtle",
+            "size": [2, 1],
+            "pattern": [
+                [1],
+                [1]
+            ]
+        },
+        "cc": {
+            "name": "Chipmunk",
+            "size": [4, 2],
+            "pattern": [
+                [1, 0],
+                [0, 1],
+                [0, 0],
+                [1, 0]
+            ]
+        }
+    },
+    "mountain": {
+        "mg": {
+            "name": "Goat",
+            "size": [3, 2],
+            "pattern": [
+                [1, 1],
+                [1, 0],
+                [1, 0]
+            ]
+        },
+        "mcg": {
+            "name": "Cougar",
+            "size": [3, 3],
+            "pattern": [
+                [1, 0, 1],
+                [0, 1, 0],
+                [1, 0, 0]
+            ]
+        },
+        "mek": {
+            "name": "Elk",
+            "size": [3, 2],
+            "pattern": [
+                [0, 1],
+                [1, 0],
+                [1, 1]
+            ]
+        },
+        "meg": {
+            "name": "Eagle",
+            "size": [2, 3],
+            "pattern": [
+                [0, 1, 1],
+                [1, 0, 0]
+            ]
+        },
+        "mcy": {
+            "name": "Coyote",
+            "size": [3, 2],
+            "pattern": [
+                [0, 1],
+                [0, 1],
+                [1, 0]
+            ]
+        },
+        "ma": {
+            "name": "Aatxe",
+            "size": [3, 2],
+            "pattern": [
+                [1, 1],
+                [0, 0],
+                [0, 1]
+            ]
+        },
+        "mp": {
+            "name": "Pika",
+            "size": [3, 2],
+            "pattern": [
+                [0, 1],
+                [0, 0],
+                [1, 1]
+            ]
+        }
+    },
+    "nocturnal": {
+        "tbd": {
+            "name": "Badget",
+            "size": [3, 3],
+            "pattern": [
+                [0, 0, 1],
+                [1, 0, 1],
+                [1, 0, 0]
+            ]
+        },
+        "tba": {
+            "name": "Bat",
+            "size": [3, 3],
+            "pattern": [
+                [1, 0, 1],
+                [0, 1, 0],
+                [0, 1, 0]
+            ]
+        },
+        "tkw": {
+            "name": "Kiwi",
+            "size": [3, 3],
+            "pattern": [
+                [0, 1, 0],
+                [1, 0, 1],
+                [0, 0, 1]
+            ]
+        },
+        "tfs": {
+            "name": "Flying Squirrel",
+            "size": [4, 2],
+            "pattern": [
+                [1, 0],
+                [0, 0],
+                [0, 1],
+                [1, 0]
+            ]
+        },
+        "tkk": {
+            "name": "Kakapo",
+            "size": [2, 3],
+            "pattern": [
+                [1, 1],
+                [0, 0],
+                [0, 1]
+            ]
+        },
+        "tg": {
+            "name": "Ghost",
+            "size": [2, 2],
+            "pattern": [
+                [1, 0],
+                [0, 1]
+            ]
+        },
+        "tff": {
+            "name": "Firefly",
+            "size": [3, 3],
+            "pattern": [
+                [1, 0, 0],
+                [1, 0, 0],
+                [0, 0, 1]
+            ]
+        }
+    },
+    "moon": {
+        "slmk": {
+            "name": "Moonkey",
+            "size": [3, 3],
+            "pattern": [
+                [0, 1, 1],
+                [0, 0, 0],
+                [1, 1, 0]
+            ]
+        },
+        "sll": {
+            "name": "Lunar Tick",
+            "size": [3, 4],
+            "pattern": [
+                [1, 0, 0, 0],
+                [0, 1, 0, 1],
+                [1, 0, 0, 0]
+            ]
+        },
+        "slt": {
+            "name": "Tribble",
+            "size": [3, 2],
+            "pattern": [
+                [1, 0],
+                [1, 1],
+                [1, 0]
+            ]
+        },
+        "slc": {
+            "name": "Moonicorn",
+            "size": [2, 2],
+            "pattern": [
+                [1, 1],
+                [1, 0]
+            ]
+        },
+        "slmh": {
+            "name": "Luna Moth",
+            "size": [3, 3],
+            "pattern": [
+                [0, 0, 1],
+                [1, 0, 0],
+                [0, 0, 1]
+            ]
+        },
+        "slr": {
+            "name": "Jade Rabbit",
+            "size": [2, 3],
+            "pattern": [
+                [0, 0, 1],
+                [1, 0, 0]
+            ]
+        },
+        "slb": {
+            "name": "Babmoon",
+            "size": [3, 3],
+            "pattern": [
+                [1, 0, 0],
+                [0, 0, 1],
+                [0, 1, 0]
+            ]
+        }
+    },
+    "mars": {
+        "smmt": {
+            "name": "Marsmot",
+            "size": [2, 3],
+            "pattern": [
+                [1, 0, 0],
+                [1, 1, 1]
+            ]
+        },
+        "smms": {
+            "name": "Marsmoset",
+            "size": [3, 3],
+            "pattern": [
+                [0, 0, 1],
+                [1, 0, 0],
+                [0, 1, 1]
+            ]
+        },
+        "smrk": {
+            "name": "Rock",
+            "size": [2, 2],
+            "pattern": [
+                [1, 1],
+                [1, 1]
+            ]
+        },
+        "smrv": {
+            "name": "Rover",
+            "size": [3, 2],
+            "pattern": [
+                [1, 0],
+                [0, 1],
+                [1, 0]
+            ]
+        },
+        "smmn": {
+            "name": "Martian",
+            "size": [3, 2],
+            "pattern": [
+                [0, 1],
+                [1, 0],
+                [0, 1]
+            ]
+        },
+        "smml": {
+            "name": "Marsmallow",
+            "size": [1, 3],
+            "pattern": [
+                [1, 0, 1]
+            ]
+        },
+        "smmr": {
+            "name": "Marsten",
+            "size": [4, 2],
+            "pattern": [
+                [0, 1],
+                [0, 0],
+                [0, 1],
+                [1, 0]
+            ]
+        }
+    },
+    "constellation": {
+        
+    }
+}

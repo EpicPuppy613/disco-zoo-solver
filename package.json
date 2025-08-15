@@ -1,0 +1,38 @@
+{
+  "name": "disco-zoo-solver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "run-script-os",
+    "clean:linux": "rm -rf dist&&mkdir dist",
+    "clean:windows": "rmdir /s /q dist&&mkdir dist",
+    "build-dev": "npm run clean&&webpack --mode development",
+    "build-prod": "npm run clean&&webpack --mode production",
+    "start": "webpack serve --mode development --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpicPuppy613/disco-zoo-solver.git"
+  },
+  "author": "EpicPuppy613",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EpicPuppy613/disco-zoo-solver/issues"
+  },
+  "homepage": "https://github.com/EpicPuppy613/disco-zoo-solver#readme",
+  "devDependencies": {
+    "css-loader": "^7.1.2",
+    "html-loader": "^5.1.0",
+    "html-webpack-plugin": "^5.6.4",
+    "mini-css-extract-plugin": "^2.9.4",
+    "run-script-os": "^1.1.6",
+    "style-loader": "^4.0.0",
+    "ts-loader": "^9.5.2",
+    "typescript": "^5.9.2",
+    "webpack": "^5.101.2",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.2"
+  },
+  "type": "module"
+}

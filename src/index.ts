@@ -166,27 +166,28 @@ function updateBoard() {
         }
     });
     let needsUpdate = false;
-    for (let i = 0; i < animals.length; i++) {
-        const animal = animals[i];
-        if (animal.found || animalPossible[i] != 1) continue;
-        iterateGrid(5, 5, (x, y) => {
-            const cell = grid[x][y];
-            if (cell.current != CellAnimal.Unknown) return;
-            if (cell.animalChances[i]) {
-                cell.current = i + 1;
-                cell.select.innerHTML += `<option selected>${animal.name}</option>`;
-            }
-        });
-        animal.found = true;
-        needsUpdate = true;
-        break;
-    }
     iterateGrid(5, 5, (x, y) => {
         const cell = grid[x][y];
-        if (cell.current != CellAnimal.Unknown || cell.totalChances != 0) return;
-        cell.current = CellAnimal.Nothing;
-        cell.select.innerHTML += `<option selected>Nothing</option>`
-        needsUpdate = true;
+        if (cell.current != CellAnimal.Unknown) return;
+        if (cell.totalChances == 0) {
+            cell.current = CellAnimal.Nothing;
+            cell.select.innerHTML += `<option selected>Nothing</option>`
+            needsUpdate = true;
+            return;
+        }
+        for (let i = 0; i < animals.length; i++) {
+            const animal = animals[i];
+            if (animal.found || animalPossible[i] < 1) continue;
+            if (cell.animalChances[i] == animalPossible[i]) {
+                cell.current = i + 1;
+                animal.cells++;
+                cell.select.innerHTML += `<option selected>${animal.name}</option>`;
+                if (animal.cells >= patterns[animal.id].cells) {
+                    animal.found = true;
+                }
+                needsUpdate = true;
+            }
+        }
     });
     if (needsUpdate) updateBoard();
 }

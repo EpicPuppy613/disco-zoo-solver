@@ -1,4 +1,4 @@
-import { patterns } from "./patterns";
+import { patterns, regions } from "./patterns";
 import "./style.css";
 
 enum CellAnimal {
@@ -24,7 +24,7 @@ class Animal {
     constructor(id: string, index: number) {
         this.id = id;
         this.index = index;
-        this.name = patterns[region][this.id].name;
+        this.name = patterns[this.id].name;
     }
 }
 
@@ -48,8 +48,8 @@ function changeRegion() {
     region = (document.getElementById("area") as HTMLSelectElement).value;
     
     let select = `<option value="">None</option>`;
-    for (const animal of Object.keys(patterns[region])) {
-        select += `<option value="${animal}">${patterns[region][animal].name}</option>`;
+    for (const animal of regions[region]) {
+        select += `<option value="${animal}">${patterns[animal].name}</option>`;
     }
     animal1.innerHTML = select;
     animal2.innerHTML = select;
@@ -111,7 +111,7 @@ function updateBoard() {
     //  b. If it does fit, iterate through each square of the animal and increase that cell's count
     for (const animal of animals) {
         if (animal.found) continue;
-        const pattern = patterns[region][animal.id];
+        const pattern = patterns[animal.id];
         iterateGrid(6 - pattern.size[0], 6 - pattern.size[1], (x1, y1) => {
             let valid = true;
             let cells = 0;
@@ -200,7 +200,7 @@ function updateCell(select: HTMLSelectElement, x: number, y: number) {
     if (value > 0) {
         const animal = animals[value - 1];
         animal.cells++;
-        if (animal.cells >= patterns[region][animal.id].cells) {
+        if (animal.cells >= patterns[animal.id].cells) {
             animal.found = true;
         }
     }
@@ -211,7 +211,7 @@ function animalName(index: number) {
     if (index < 0) return "Nothing";
     console.log(index);
     const animal = animals[index];
-    return patterns[region][animal.id].name;
+    return patterns[animal.id].name;
 }
 
 (document.getElementById("area") as HTMLSelectElement).addEventListener("change", changeRegion);

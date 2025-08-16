@@ -1,4 +1,4 @@
-import p from './patterns.json';
+import raw from './patterns.json';
 
 export interface AnimalPattern {
     id: string;
@@ -8,4 +8,14 @@ export interface AnimalPattern {
     pattern: string[][];
 }
 
-export const patterns = p as unknown as {[key: string]: {[key: string]: AnimalPattern}};
+const p: any = {};
+const r: any = {};
+for (const [region, animals] of Object.entries(raw)) {
+    for (const [animal, pattern] of Object.entries(animals)) {
+        p[animal] = pattern;
+    }
+    r[region] = Object.keys(animals);
+}
+
+export const patterns = p as unknown as {[key: string]: AnimalPattern};
+export const regions = r as {[key: string]: string[]}

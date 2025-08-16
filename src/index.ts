@@ -52,6 +52,7 @@ function changeRegion() {
     animal1.innerHTML = select;
     animal2.innerHTML = select;
     animal3.innerHTML = select;
+    reset();
 }
 
 function reset() {
@@ -74,11 +75,11 @@ function reset() {
     const gridRows: HTMLTableRowElement[] = [];
     for (let i = 0; i < 5; i++) {
         gridRows.push(document.createElement("tr"));
-        gridTable.appendChild(gridRows[i]);
+        gridTable.prepend(gridRows[i]);
     }
     iterateGrid(5, 5, (x, y) => {
         const cell = document.createElement("td");
-        gridRows[y].prepend(cell);
+        gridRows[y].appendChild(cell);
         const select = document.createElement("select");
         cell.appendChild(select);
         select.id = `cell${x}${y}`;
@@ -91,6 +92,7 @@ function reset() {
         grid[x][y].element = data;
         grid[x][y].animalChances = new Array(animals.length).fill(0);
     });
+    if (animals.length > 0) updateBoard();
 }
 
 function updateBoard() {
@@ -134,9 +136,9 @@ function updateBoard() {
     let bestAnimals = new Array(animals.length).fill(0);
     iterateGrid(5, 5, (x, y) => {
         const cell = grid[x][y];
+        if (cell.current != CellAnimal.Unknown) return;
         bestOverall = Math.max(bestOverall, cell.totalChances);
         for (let i = 0; i < animals.length; i++) {
-            if (cell.current != CellAnimal.Unknown) continue;
             bestAnimals[i] = Math.max(bestAnimals[i], cell.animalChances[i]);
         }
     });
@@ -183,4 +185,4 @@ changeRegion();
 reset();
 
 (document.getElementById("area") as HTMLSelectElement).addEventListener("change", changeRegion);
-(document.getElementById("reset") as HTMLButtonElement).addEventListener("click", () => {reset(); updateBoard();});
+(document.getElementById("reset") as HTMLButtonElement).addEventListener("click", reset);

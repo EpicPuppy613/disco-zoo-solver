@@ -4,6 +4,7 @@ export interface AnimalPattern {
     id: string;
     name: string;
     size: [number, number];
+    cells: number;
     pattern: string[][];
 }
 

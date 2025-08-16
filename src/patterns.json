@@ -3,6 +3,7 @@
         "fp": {
             "name": "Pig",
             "size": [2, 2],
+            "cells": 4,
             "pattern": [
                 [1, 1],
                 [1, 1]
@@ -11,6 +12,7 @@
         "fs": {
             "name": "Sheep",
             "size": [4, 1],
+            "cells": 4,
             "pattern": [
                 [1], [1], [1], [1]
             ]
@@ -18,6 +20,7 @@
         "fr": {
             "name": "Rabbit",
             "size": [1, 4],
+            "cells": 4,
             "pattern": [
                 [1, 1, 1, 1]
             ]
@@ -25,6 +28,7 @@
         "fcw": {
             "name": "Cow",
             "size": [3, 1],
+            "cells": 3,
             "pattern": [
                 [1], [1], [1]
             ]
@@ -32,6 +36,7 @@
         "fh": {
             "name": "Horse",
             "size": [1, 3],
+            "cells": 3,
             "pattern": [
                 [1, 1, 1]
             ]
@@ -39,6 +44,7 @@
         "fu": {
             "name": "Unicorn",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [0, 1],
                 [1, 0],
@@ -48,6 +54,7 @@
         "fch": {
             "name": "Chicken",
             "size": [3, 3],
+            "cells": 3,
             "pattern": [
                 [1, 0, 0],
                 [0, 1, 0],
@@ -59,6 +66,7 @@
         "okg": {
             "name": "Kangaroo",
             "size": [4, 4],
+            "cells": 4,
             "pattern": [
                 [0, 0, 0, 1],
                 [0, 0, 1, 0],
@@ -69,6 +77,7 @@
         "op": {
             "name": "Platypus",
             "size": [3, 2],
+            "cells": 4,
             "pattern": [
                 [0, 1],
                 [1, 1],
@@ -78,6 +87,7 @@
         "oce": {
             "name": "Crocodile",
             "size": [4, 1],
+            "cells": 4,
             "pattern": [
                 [1], [1], [1], [1]
             ]
@@ -85,6 +95,7 @@
         "oka": {
             "name": "Koala",
             "size": [2, 2],
+            "cells": 3,
             "pattern": [
                 [0, 1],
                 [1, 1]
@@ -93,6 +104,7 @@
         "oco": {
             "name": "Cockatoo",
             "size": [2, 3],
+            "cells": 3,
             "pattern": [
                 [0, 0, 1],
                 [1, 1, 0]
@@ -101,6 +113,7 @@
         "ot": {
             "name": "Tiddalik",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [1, 0],
                 [0, 1],
@@ -110,6 +123,7 @@
         "oe": {
             "name": "Echidna",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [1, 0],
                 [1, 0],
@@ -121,6 +135,7 @@
         "sz": {
             "name": "Zebra",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [0, 1, 0],
                 [1, 0, 1],
@@ -130,6 +145,7 @@
         "sh": {
             "name": "Hippo",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [1, 0, 1],
                 [0, 0, 0],
@@ -139,6 +155,7 @@
         "sge": {
             "name": "Giraffe",
             "size": [1, 4],
+            "cells": 4,
             "pattern": [
                 [1, 1, 1, 1]
             ]
@@ -146,6 +163,7 @@
         "sl": {
             "name": "Lion",
             "size": [3, 1],
+            "cells": 3,
             "pattern": [
                 [1], [1], [1]
             ]
@@ -153,6 +171,7 @@
         "se": {
             "name": "Elephant",
             "size": [2, 2],
+            "cells": 3,
             "pattern": [
                 [1, 1],
                 [0, 1]
@@ -161,6 +180,7 @@
         "sgn": {
             "name": "Gryphon",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [0, 1],
                 [1, 0],
@@ -170,6 +190,7 @@
         "sr": {
             "name": "Rhinoceros",
             "size": [2, 3],
+            "cells": 3,
             "pattern": [
                 [0, 1, 0],
                 [1, 0, 1]
@@ -180,6 +201,7 @@
         "nbr": {
             "name": "Bear",
             "size": [2, 3],
+            "cells": 4,
             "pattern": [
                 [0, 0, 1],
                 [1, 1, 1]
@@ -188,6 +210,7 @@
         "nsk": {
             "name": "Skunk",
             "size": [3, 2],
+            "cells": 4,
             "pattern": [
                 [1, 0],
                 [1, 1],
@@ -197,6 +220,7 @@
         "nbv": {
             "name": "Beaver",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [0, 1, 0],
                 [0, 1, 0],
@@ -206,6 +230,7 @@
         "nm": {
             "name": "Moose",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [0, 1],
                 [1, 0],
@@ -215,6 +240,7 @@
         "nf": {
             "name": "Fox",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [0, 1],
                 [0, 1],
@@ -224,6 +250,7 @@
         "nsh": {
             "name": "Sasquatch",
             "size": [1, 2],
+            "cells": 2,
             "pattern": [
                 [1, 1]
             ]
@@ -231,6 +258,7 @@
         "no": {
             "name": "Otter",
             "size": [2, 2],
+            "cells": 3,
             "pattern": [
                 [1, 1],
                 [1, 0]
@@ -241,6 +269,7 @@
         "pp": {
             "name": "Penguin",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [1, 0, 0],
                 [0, 1, 1],
@@ -250,6 +279,7 @@
         "ps": {
             "name": "Seal",
             "size": [4, 3],
+            "cells": 4,
             "pattern": [
                 [0, 0, 1],
                 [0, 1, 0],
@@ -260,6 +290,7 @@
         "pm": {
             "name": "Muskox",
             "size": [3, 2],
+            "cells": 4,
             "pattern": [
                 [1, 1],
                 [0, 1],
@@ -269,6 +300,7 @@
         "pb": {
             "name": "Polar Bear",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [0, 1],
                 [0, 0],
@@ -278,6 +310,7 @@
         "pw": {
             "name": "Walrus",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [0, 1],
                 [1, 0],
@@ -287,6 +320,7 @@
         "py": {
             "name": "Yeti",
             "size": [1, 3],
+            "cells": 2,
             "pattern": [
                 [1, 0, 1]
             ]
@@ -294,6 +328,7 @@
         "pso": {
             "name": "Snowy Owl",
             "size": [2, 2],
+            "cells": 3,
             "pattern": [
                 [0, 1],
                 [1, 1]
@@ -304,6 +339,7 @@
         "jm": {
             "name": "Monkey",
             "size": [4, 2],
+            "cells": 4,
             "pattern": [
                 [0, 1],
                 [1, 0],
@@ -314,6 +350,7 @@
         "jtc": {
             "name": "Toucan",
             "size": [2, 4],
+            "cells": 4,
             "pattern": [
                 [0, 0, 1, 0],
                 [1, 1, 0, 1]
@@ -322,6 +359,7 @@
         "jg": {
             "name": "Gorilla",
             "size": [3, 2],
+            "cells": 4,
             "pattern": [
                 [1, 1],
                 [0, 0],
@@ -331,6 +369,7 @@
         "jpa": {
             "name": "Panda",
             "size": [3, 3],
+            "cells": 3,
             "pattern": [
                 [0, 1, 0],
                 [0, 0, 0],
@@ -340,6 +379,7 @@
         "jtg": {
             "name": "Tiger",
             "size": [4, 1],
+            "cells": 3,
             "pattern": [
                 [1], [0], [1], [1]
             ]
@@ -347,6 +387,7 @@
         "jpx": {
             "name": "Phoenix",
             "size": [3, 3],
+            "cells": 2,
             "pattern": [
                 [0, 0, 1],
                 [0, 0, 0],
@@ -356,6 +397,7 @@
         "jl": {
             "name": "Lemur",
             "size": [2, 3],
+            "cells": 3,
             "pattern": [
                 [1, 0, 1],
                 [0, 1, 0]
@@ -366,6 +408,7 @@
         "ddp": {
             "name": "Diplodocus",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [0, 0, 1],
                 [1, 1, 0],
@@ -375,6 +418,7 @@
         "ds": {
             "name": "Stegosaurus",
             "size": [4, 2],
+            "cells": 4,
             "pattern": [
                 [1, 0],
                 [0, 1],
@@ -385,6 +429,7 @@
         "dr": {
             "name": "Raptor",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [0, 0, 1],
                 [0, 1, 1],
@@ -394,6 +439,7 @@
         "dtx": {
             "name": "T-Rex",
             "size": [2, 3],
+            "cells": 3,
             "pattern": [
                 [1, 0, 1],
                 [1, 0, 0]
@@ -402,6 +448,7 @@
         "dtr": {
             "name": "Triceratops",
             "size": [3, 3],
+            "cells": 3,
             "pattern": [
                 [1, 0, 1],
                 [0, 0, 0],
@@ -411,6 +458,7 @@
         "ddr": {
             "name": "Dragon",
             "size": [3, 2],
+            "cells": 2,
             "pattern": [
                 [0, 1],
                 [0, 0],
@@ -420,6 +468,7 @@
         "da": {
             "name": "Ankylosaurus",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [1, 0],
                 [0, 0],
@@ -431,6 +480,7 @@
         "iwr": {
             "name": "Wooly Rhino",
             "size": [4, 3],
+            "cells": 4,
             "pattern": [
                 [0, 1, 0],
                 [1, 0, 0],
@@ -441,6 +491,7 @@
         "igs": {
             "name": "Giant Sloth",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [1, 0, 1],
                 [0, 0, 0],
@@ -450,6 +501,7 @@
         "idw": {
             "name": "Dire Wolf",
             "size": [4, 3],
+            "cells": 4,
             "pattern": [
                 [0, 1, 0],
                 [1, 0, 1],
@@ -460,6 +512,7 @@
         "ist": {
             "name": "Saber Tooth",
             "size": [3, 3],
+            "cells": 3,
             "pattern": [
                 [0, 1, 0],
                 [1, 0, 0],
@@ -469,6 +522,7 @@
         "im": {
             "name": "Mammoth",
             "size": [3, 3],
+            "cells": 3,
             "pattern": [
                 [0, 1, 0],
                 [0, 0, 1],
@@ -478,6 +532,7 @@
         "ia": {
             "name": "Akhlut",
             "size": [3, 3],
+            "cells": 3,
             "pattern": [
                 [0, 1, 0],
                 [0, 0, 0],
@@ -487,6 +542,7 @@
         "iyc": {
             "name": "Yukon Camel",
             "size": [4, 3],
+            "cells": 3,
             "pattern": [
                 [0, 1, 0],
                 [0, 0, 0],
@@ -499,6 +555,7 @@
         "crc": {
             "name": "Raccoon",
             "size": [4, 2],
+            "cells": 4,
             "pattern": [
                 [1, 1],
                 [0, 0],
@@ -509,6 +566,7 @@
         "cp": {
             "name": "Pigeon",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [0, 0, 1],
                 [1, 1, 0],
@@ -518,6 +576,7 @@
         "crt": {
             "name": "Rat",
             "size": [4, 2],
+            "cells": 4,
             "pattern": [
                 [0, 1],
                 [1, 1],
@@ -528,6 +587,7 @@
         "cs": {
             "name": "Squirrel",
             "size": [3, 3],
+            "cells": 3,
             "pattern": [
                 [0, 1, 0],
                 [1, 0, 0],
@@ -537,6 +597,7 @@
         "co": {
             "name": "Opossum",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [1, 1],
                 [0, 0],
@@ -546,6 +607,7 @@
         "ct": {
             "name": "Sewer Turtle",
             "size": [2, 1],
+            "cells": 2,
             "pattern": [
                 [1],
                 [1]
@@ -554,6 +616,7 @@
         "cc": {
             "name": "Chipmunk",
             "size": [4, 2],
+            "cells": 3,
             "pattern": [
                 [1, 0],
                 [0, 1],
@@ -566,6 +629,7 @@
         "mg": {
             "name": "Goat",
             "size": [3, 2],
+            "cells": 4,
             "pattern": [
                 [1, 1],
                 [1, 0],
@@ -575,6 +639,7 @@
         "mcg": {
             "name": "Cougar",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [1, 0, 1],
                 [0, 1, 0],
@@ -584,6 +649,7 @@
         "mek": {
             "name": "Elk",
             "size": [3, 2],
+            "cells": 4,
             "pattern": [
                 [0, 1],
                 [1, 0],
@@ -593,6 +659,7 @@
         "meg": {
             "name": "Eagle",
             "size": [2, 3],
+            "cells": 3,
             "pattern": [
                 [0, 1, 1],
                 [1, 0, 0]
@@ -601,6 +668,7 @@
         "mcy": {
             "name": "Coyote",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [0, 1],
                 [0, 1],
@@ -610,6 +678,7 @@
         "ma": {
             "name": "Aatxe",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [1, 1],
                 [0, 0],
@@ -619,6 +688,7 @@
         "mp": {
             "name": "Pika",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [0, 1],
                 [0, 0],
@@ -630,6 +700,7 @@
         "tbd": {
             "name": "Badget",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [0, 0, 1],
                 [1, 0, 1],
@@ -639,6 +710,7 @@
         "tba": {
             "name": "Bat",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [1, 0, 1],
                 [0, 1, 0],
@@ -648,6 +720,7 @@
         "tkw": {
             "name": "Kiwi",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [0, 1, 0],
                 [1, 0, 1],
@@ -657,6 +730,7 @@
         "tfs": {
             "name": "Flying Squirrel",
             "size": [4, 2],
+            "cells": 3,
             "pattern": [
                 [1, 0],
                 [0, 0],
@@ -667,6 +741,7 @@
         "tkk": {
             "name": "Kakapo",
             "size": [2, 3],
+            "cells": 3,
             "pattern": [
                 [1, 1],
                 [0, 0],
@@ -676,6 +751,7 @@
         "tg": {
             "name": "Ghost",
             "size": [2, 2],
+            "cells": 2,
             "pattern": [
                 [1, 0],
                 [0, 1]
@@ -684,6 +760,7 @@
         "tff": {
             "name": "Firefly",
             "size": [3, 3],
+            "cells": 3,
             "pattern": [
                 [1, 0, 0],
                 [1, 0, 0],
@@ -695,6 +772,7 @@
         "slmk": {
             "name": "Moonkey",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [0, 1, 1],
                 [0, 0, 0],
@@ -704,6 +782,7 @@
         "sll": {
             "name": "Lunar Tick",
             "size": [3, 4],
+            "cells": 4,
             "pattern": [
                 [1, 0, 0, 0],
                 [0, 1, 0, 1],
@@ -713,6 +792,7 @@
         "slt": {
             "name": "Tribble",
             "size": [3, 2],
+            "cells": 4,
             "pattern": [
                 [1, 0],
                 [1, 1],
@@ -722,6 +802,7 @@
         "slc": {
             "name": "Moonicorn",
             "size": [2, 2],
+            "cells": 3,
             "pattern": [
                 [1, 1],
                 [1, 0]
@@ -730,6 +811,7 @@
         "slmh": {
             "name": "Luna Moth",
             "size": [3, 3],
+            "cells": 3,
             "pattern": [
                 [0, 0, 1],
                 [1, 0, 0],
@@ -739,6 +821,7 @@
         "slr": {
             "name": "Jade Rabbit",
             "size": [2, 3],
+            "cells": 2,
             "pattern": [
                 [0, 0, 1],
                 [1, 0, 0]
@@ -747,6 +830,7 @@
         "slb": {
             "name": "Babmoon",
             "size": [3, 3],
+            "cells": 3,
             "pattern": [
                 [1, 0, 0],
                 [0, 0, 1],
@@ -758,6 +842,7 @@
         "smmt": {
             "name": "Marsmot",
             "size": [2, 3],
+            "cells": 4,
             "pattern": [
                 [1, 0, 0],
                 [1, 1, 1]
@@ -766,6 +851,7 @@
         "smms": {
             "name": "Marsmoset",
             "size": [3, 3],
+            "cells": 4,
             "pattern": [
                 [0, 0, 1],
                 [1, 0, 0],
@@ -775,6 +861,7 @@
         "smrk": {
             "name": "Rock",
             "size": [2, 2],
+            "cells": 4,
             "pattern": [
                 [1, 1],
                 [1, 1]
@@ -783,6 +870,7 @@
         "smrv": {
             "name": "Rover",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [1, 0],
                 [0, 1],
@@ -792,6 +880,7 @@
         "smmn": {
             "name": "Martian",
             "size": [3, 2],
+            "cells": 3,
             "pattern": [
                 [0, 1],
                 [1, 0],
@@ -801,6 +890,7 @@
         "smml": {
             "name": "Marsmallow",
             "size": [1, 3],
+            "cells": 2,
             "pattern": [
                 [1, 0, 1]
             ]
@@ -808,6 +898,7 @@
         "smmr": {
             "name": "Marsten",
             "size": [4, 2],
+            "cells": 3,
             "pattern": [
                 [0, 1],
                 [0, 0],

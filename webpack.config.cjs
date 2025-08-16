@@ -20,10 +20,6 @@ const config = {
                 use: ['css-loader']
             },
             {
-                test: /\.json$/,
-                use: 'json-loader'
-            },
-            {
                 test: /\.html$/,
                 use: 'html-loader'
             }

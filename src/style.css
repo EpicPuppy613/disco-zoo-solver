@@ -34,10 +34,10 @@ select {
     color: lime;
 }
 table {
-    width: 100%;
     text-align: center;
 }
 td {
+    padding: 6px;
     border: 1px solid white;
 }
 td:hover {
@@ -49,4 +49,7 @@ td .disabled {
 }
 .best {
     color: lime;
+}
+strong {
+    font-size: 1.25em;
 }

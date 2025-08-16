@@ -35,10 +35,14 @@ select {
 }
 table {
     text-align: center;
+    min-width: 60%;
+    margin: auto;
 }
 td {
-    padding: 6px;
+    padding: 12px;
     border: 1px solid white;
+    height: 4em;
+    width: 20%;
 }
 td:hover {
     background-color: #333;

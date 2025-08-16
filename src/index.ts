@@ -1,4 +1,4 @@
-import { AnimalPattern, patterns } from "./patterns";
+import { patterns } from "./patterns";
 import "./style.css";
 
 enum CellAnimal {
@@ -16,6 +16,7 @@ class GridCell {
 
 class Animal {
     id: string;
+    name: string;
     index: number;
     cells: number = 0;
     found: boolean = false;
@@ -23,6 +24,7 @@ class Animal {
     constructor(id: string, index: number) {
         this.id = id;
         this.index = index;
+        this.name = patterns[region][this.id].name;
     }
 }
 
@@ -82,7 +84,6 @@ function reset() {
         gridRows[y].appendChild(cell);
         const select = document.createElement("select");
         cell.appendChild(select);
-        select.id = `cell${x}${y}`;
         select.innerHTML = `<option value="">???</option>`;
         select.addEventListener("change", updateCell.bind(null, select, x, y));
         grid[x][y].select = select;
@@ -109,6 +110,7 @@ function updateBoard() {
     //  a. Check each square of the animal's pattern and see if it matches what's currently on the grid
     //  b. If it does fit, iterate through each square of the animal and increase that cell's count
     for (const animal of animals) {
+        if (animal.found) continue;
         const pattern = patterns[region][animal.id];
         iterateGrid(6 - pattern.size[0], 6 - pattern.size[1], (x1, y1) => {
             let valid = true;
@@ -147,21 +149,46 @@ function updateBoard() {
         let text = `<strong${cell.totalChances == bestOverall ? ' class="best"' : ''}>${(cell.totalChances / totalPossible * 100).toFixed(1)}%</strong>`;
         for (let i = 0; i < animals.length; i++) {
             if (animals[i].found) continue;
-            text += `<br><span${cell.animalChances[i] == bestAnimals[i] ? ' class="best"' : ''}>${patterns[region][animals[i].id].name}: ${(cell.animalChances[i] / animalPossible[i] * 100).toFixed(1)}%</span>`;
+            text += `<br><span${cell.animalChances[i] == bestAnimals[i] ? ' class="best"' : ''}>${animalName(i)}: ${(cell.animalChances[i] / animalPossible[i] * 100).toFixed(1)}%</span>`;
         }
         let options = '<option value="">???</option><option value="-1">Nothing</option>';
         for (const animal of animals) {
             if (animal.found) continue;
-            options += `<option value="${animal.index + 1}">${patterns[region][animal.id].name}</option>`;
+            options += `<option value="${animal.index + 1}">${animal.name}</option>`;
         }
         if (cell.current == CellAnimal.Unknown) {
             cell.element.innerHTML = text;
             cell.select.innerHTML = options;
-        } else {
-            cell.element.innerHTML = "";
-            cell.select.disabled = true;
+        } else if (cell.select) {
+            cell.element.innerHTML = `<strong style="color:${cell.current == CellAnimal.Nothing ? 'gray' : 'cyan'};">${animalName(cell.current - 1)}</strong>`;
+            cell.select.remove();
+            cell.select = null;
         }
     });
+    let needsUpdate = false;
+    for (let i = 0; i < animals.length; i++) {
+        const animal = animals[i];
+        if (animal.found || animalPossible[i] != 1) continue;
+        iterateGrid(5, 5, (x, y) => {
+            const cell = grid[x][y];
+            if (cell.current != CellAnimal.Unknown) return;
+            if (cell.animalChances[i]) {
+                cell.current = i + 1;
+                cell.select.innerHTML += `<option selected>${animal.name}</option>`;
+            }
+        });
+        animal.found = true;
+        needsUpdate = true;
+        break;
+    }
+    iterateGrid(5, 5, (x, y) => {
+        const cell = grid[x][y];
+        if (cell.current != CellAnimal.Unknown || cell.totalChances != 0) return;
+        cell.current = CellAnimal.Nothing;
+        cell.select.innerHTML += `<option selected>Nothing</option>`
+        needsUpdate = true;
+    });
+    if (needsUpdate) updateBoard();
 }
 
 function updateCell(select: HTMLSelectElement, x: number, y: number) {
@@ -180,9 +207,15 @@ function updateCell(select: HTMLSelectElement, x: number, y: number) {
     updateBoard();
 }
 
-// First time init
-changeRegion();
-reset();
+function animalName(index: number) {
+    if (index < 0) return "Nothing";
+    console.log(index);
+    const animal = animals[index];
+    return patterns[region][animal.id].name;
+}
 
 (document.getElementById("area") as HTMLSelectElement).addEventListener("change", changeRegion);
 (document.getElementById("reset") as HTMLButtonElement).addEventListener("click", reset);
+
+changeRegion();
+reset();
